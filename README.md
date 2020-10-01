@@ -26,7 +26,8 @@ https://github.com/radareorg/radare2-r2pipe
 2. Do some ghetto reversing.
 3. Find a function that interest you.
 4. Steezy.
-5. Yara.
+5. Tidy, tighten and adjust rule to your needs.
+6. Yara.
 
 ```
 $ ./steezy.py -f ~/MALWARE/5d59311fc5407d55c96016dbc4e72006 -o 0x10001e20
