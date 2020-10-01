@@ -6,6 +6,7 @@
 Python script written to make a lazy Irish person do less work.
 """
 
+import os
 import re
 import sys
 import logging
@@ -245,6 +246,10 @@ def main():
             level=logging.INFO
         )
         logging.getLogger().setLevel(logging.INFO)
+
+    if not os.path.isfile(args.filepath):
+        logging.error("File does not exist: %s", args.filepath)
+        sys.exit(1)
 
     rules = {}
 
